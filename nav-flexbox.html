@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      * {
+        font-family: "SF Pro Text", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .logo {
+        font-family: "Burbank Big Condensed";
+      }
+      .logo > a > img {
+        height: 50px;
+        /* width: 70px; */
+        flex-grow: 2;
+      }
+      .navbar {
+        height: 70px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .right ul {
+        display: flex;
+        gap: 50px;
+      }
+      .right > ul > li {
+        /* padding-left: 20px; */
+        list-style: none;
+        font-style: normal;
+      }
+      .right > ul > li > a {
+        font-weight: 600;
+        color: #1f1f1f;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all ease-out 150ms;
+      }
+      .right > ul > li > a:hover {
+        color: #ff9100;
+        text-underline-offset: 5px;
+      }
+      .right ul li span {
+        padding: 0 10px;
+      }
+      /* .space-before{
+            flex-grow: 1;
+        } */
+      h2 {
+        font-size: 40px;
+        margin-left: 10px;
+      }
+      /* .image-por{
+            display: flex;
+        } */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#" class="image-por"
+            ><img
+              src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png"
+              alt="My Logo"
+          /></a>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a href="#"
+                ><span>Products</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>Pricing </span
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>Resources </span
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>About us </span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <img
+                src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                alt="Log"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
